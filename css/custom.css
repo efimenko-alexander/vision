@@ -1,0 +1,395 @@
+/* Fonts */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+    url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic.eot');
+    src: url('../fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+    url('../fonts/Montserrat-Italic.woff') format('woff'),
+    url('../fonts/Montserrat-Italic.ttf') format('truetype'),
+    url('../fonts/Montserrat-Italic.svg#Montserrat-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.eot');
+    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff'),
+    url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+    url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Thin.eot');
+    src: url('../fonts/Montserrat-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+    url('../fonts/Montserrat-Thin.woff') format('woff'),
+    url('../fonts/Montserrat-Thin.ttf') format('truetype'),
+    url('../fonts/Montserrat-Thin.svg#Montserrat-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype'),
+    url('../fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.eot');
+    src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Light.woff2') format('woff2'),
+    url('../fonts/Montserrat-Light.woff') format('woff'),
+    url('../fonts/Montserrat-Light.ttf') format('truetype'),
+    url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-title {
+    margin-bottom: 5vw;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .container {
+        max-width: 960px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+
+
+/*Custom titles*/
+h1 {
+
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: calc(42px + 30 * ((100vw - 320px) / (1920 - 320)));
+}
+
+h3 {
+    font-size: calc(24px + 24 * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 700;
+    color: #191919;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: calc(20px + 8 * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 500;
+    color: #191919;
+}
+
+h5 {
+
+    font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)));
+    color: #00494f;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #969696;
+}
+
+/*Custom paragraph*/
+p {
+    font-size: 16px;
+    color: #707070;
+
+}
+
+/* Modification img */
+img {
+    max-width:100% !important;
+    height:auto;
+    display:block;
+    vertical-align: baseline;
+}
+
+
+/* Custom text-box and textarea */
+input[type='text'],
+textarea {
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #8c8c8c;
+    background: transparent;
+    outline: none;
+
+    padding: calc(14px + 4 * ((100vw - 320px) / (1920 - 320)));
+
+    font-size: 18px;
+    transition: .5s;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type='text']:focus,
+textarea:focus {
+    border: 2px solid #00494f;
+}
+
+.text-box,
+.textarea {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Placeholder */
+.placeholder-text-box,
+.placeholder-textarea {
+    position: absolute;
+    left: 3%;
+    z-index: -1;
+    transform: translateY(-50%);
+
+    color: #9c9c9c;
+    font-size:  calc(14px + 8 * ((100vw - 320px) / (1920 - 320)));
+
+    transition: all .3s ease;
+}
+
+.placeholder-text-box {
+    top: 50%;
+}
+.placeholder-textarea {
+    top: 20px;
+}
+
+/* Placeholder animation*/
+input[type='text']:focus ~ .placeholder-text-box,
+input[type='text']:valid ~ .placeholder-text-box,
+textarea:focus ~ .placeholder-textarea,
+textarea:valid ~ .placeholder-textarea {
+    top: -1em;
+    left: 0;
+}
+
+/*Alternative animation*/
+/*input[type='text']:focus ~ .placeholder-textbox,
+textarea:focus ~ .placeholder-textarea {
+    top: -18px;
+    left: 0;
+}
+
+input[type='text']:not(:focus):valid ~ .placeholder-textbox,
+textarea:not(:focus):valid ~ .placeholder-textarea {
+    display: none;
+}*/
+
+/* Background when autocomplete */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #000 !important;
+}
+
+/* Custom Select */
+.custom-select {
+    position: relative;
+}
+
+select {
+    font-size: calc(10px + 8 * ((100vw - 320px) / (1920 - 320)));
+    padding: 1em 2em 1em 1em;
+
+    background-color: #006b72;
+    color: #fff;
+
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*select:focus ~ .custom-arrow:after {
+    border-width:  0 6px 7px 6px;
+    border-color: transparent transparent #fff transparent;
+}*/
+
+.custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 1.5em;
+    pointer-events: none;
+    background-color: #00494f;
+}
+
+.custom-arrow:after {
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 7px 6px 0 6px;
+    border-color: #fff transparent transparent transparent;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Custom button*/
+.btn {
+    width: 150px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+
+    background-color: rgba(0, 73, 79, 0.5);
+    border: none;
+    outline: none;
+
+    transition: background-color .5s;
+}
+
+.btn:hover, .btn:focus {
+    background-color: rgb(0, 73, 79);
+}
+
+/* Blur */
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: rgba(25, 25, 25, 0.80);
+    backdrop-filter: blur(8px);
+    height: 100%;
+    width: 100%;
+}
+
+/* Loading */
+.loading {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3vw;
+}
+.spinner {
+    animation: rotate 2s linear infinite;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+}
+
+.path {
+    stroke: #00494f;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}

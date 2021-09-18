@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="shortcut icon" href="img/logos/site-logo.webp" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9f1d58c44.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/barbers.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <link rel="stylesheet" href="css/lightzoom.css" type="text/css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/lightzoom.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+<!--Header-->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="index.html"><img src="img/logos/logo.webp" alt="logo" class="logo"></a>
+            </div>
+
+
+            <div class="burger" id="burger">
+                <span></span>
+            </div>
+
+            <nav class="header__menu">
+                <ul class="horizontal-menu">
+                    <li><a class="menu__link" href="about-us.html">О нас</a></li>
+                    <li><a class="menu__link" href="services.html">Услуги</a></li>
+                    <li><a class="menu__link" href="barbers.html">Барберы</a></li>
+                    <li><a class="menu__link" href="gallery.html">Галерея</a></li>
+                    <li><a class="menu__link" href="store.html">Магазин</a></li>
+                    <li><a class="menu__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!--Slider-->
+    <div class="slider">
+        <div class="slides" id="slider">
+            <div class="slide">
+                <img src="img/slider/slide-1.webp" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="img/slider/slide-2.webp" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="img/slider/slide-3.webp" alt="">
+            </div>
+
+        </div>
+
+        <div class="slider__content">
+            <div class="slider__title">
+                <h2>Открой своё видение</h2>
+            </div>
+
+            <div class="slider__text">
+                <p>И парикмахеры, и философы меняют личность людей.</p>
+            </div>
+
+            <div class="slider__btn">
+                <a href="tel: +375447618657" class="btn">Позвонить</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barbers -->
+    <div class="barbers deployed">
+        <div class="container">
+            <div class="barbers__inner" id="barbers">
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery deployed">
+        <div class="container">
+            <div class="gallery__inner" id="gallery">
+            </div>
+        </div>
+    </div>
+
+    <script>outputBarbersDeployed();</script>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__contacts">
+                <div class="footer__logo">
+                    <img src="img/logos/logo.webp" alt="logo" class="logo">
+                </div>
+
+                <div class="contacts__address">
+                    <a href="https://www.google.com/maps/dir/53.9347954,27.5451489/53.9314544,27.5512001/@53.9311875,27.5524467,18.25z?hl=ru" target="_blank">г. Минск, ул. Сморговский тракт 9</a>
+                </div>
+
+                <div class="contacts__telephone">
+                    <a href="tel: +375 (44) 761-86-57">Phone: +375 (33) 375-67-56</a>
+                </div>
+
+                <div class="contacts__social">
+                    <a href="https://www.instagram.com/vision.barbershop/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://vk.com/public196013008"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__menu">
+                <h5 class="footer__title">Меню</h5>
+                <ul class="vertical-menu">
+                    <li><a class="menu__link" href="#">О нас</a></li>
+                    <li><a class="menu__link" href="#">Услуги</a></li>
+                    <li><a class="menu__link" href="#">Барберы</a></li>
+                    <li><a class="menu__link" href="#">Магазин</a></li>
+                    <li><a class="menu__link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+
+            <div class="schedule">
+                <h5 class="footer__title">Расписание</h5>
+                <div class="schedule__inner">
+                    <p >Без выходных:</p>
+                    <p> 10.00 - 21.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

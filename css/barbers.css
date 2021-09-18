@@ -1,0 +1,228 @@
+
+.barbers {
+    width: 100%;
+    margin-bottom: 5vw;
+}
+.barbers__title {
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+.barbers__btn a {
+    margin: 0 auto;
+}
+
+.barbers__inner {
+    position: relative;
+    /*min-height: 300px;*/
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+    margin-bottom: 3vw;
+}
+
+.barber {
+    display: inline-block;
+
+    position: relative;
+    overflow: hidden;
+}
+.barber__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all .5s;
+}
+
+.barber:hover .barber__photo{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+
+.barber__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 25%;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    color: #fff;
+    font-size: calc(12px + 12 * ((100vw - 320px) / (1920 - 320)));
+    text-decoration: none;
+
+    background-color: rgba(0, 73, 79, 0.5);
+
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+@media (max-width: 1140px) {
+    .barbers__inner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .barber:nth-child(even) {
+        justify-self: right;
+    }
+}
+
+/* Deployed */
+
+.deployed .barbers__inner {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px;
+}
+
+.deployed .barber {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content min-content 1fr min-content;
+    grid-gap: 1em;
+    margin: 0 50px;
+    pointer-events: none;
+}
+
+
+.deployed .barber__photo {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    max-width: 500px;-webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+}
+
+.deployed .barber__name {
+    display: block;
+
+    height: auto;
+
+    position: static;
+
+    color: #191919;
+    font-size: calc(24px + 24 * ((100vw - 320px) / (1920 - 320)));
+
+    background-color: transparent;
+}
+
+.deployed .barber__contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 300px;
+
+    gap: 0;
+
+    align-self: end;
+    pointer-events: auto;
+}
+
+.deployed .social {
+    max-width: 50px;
+}
+
+.barbers.deployed .slick-track {
+    display: flex;
+}
+
+.barbers.deployed .slick-slide:active,
+.barbers.deployed .slick-slide:focus {
+    outline: none;
+}
+
+.barbers.deployed .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    width: 30px;
+    height: 73px;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0;
+}
+
+.barbers.deployed .slick-arrow.slick-prev {
+    left: 0;
+    background: url("../img/slider/chevron-left-black.png") 0 0 / 100% no-repeat;
+}
+
+.barbers.deployed .slick-arrow.slick-next {
+    right: 0;
+    background: url("../img/slider/chevron-right-black.png") 0 0 / 100% no-repeat;
+}
+
+.barber-gallery__photo {
+    max-width: 320px;
+    max-height: 320px;
+}
+
+@media (max-width: 1140px) {
+    .deployed .barber__name {
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .deployed .barber__photo {
+        grid-column: 1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .deployed .barber__description {
+        grid-column: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .deployed .barber__contacts {
+        grid-row: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (max-width: 960px) {
+    .deployed .barber {
+        grid-template-columns: 1fr;
+    }
+    .deployed .barber__name {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .deployed .barber__photo {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .deployed .barber__description {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .deployed .barber__contacts {
+        grid-row: 4;
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .deployed .barbers__inner {
+        padding: 0;
+    }
+    .deployed .barber {
+        margin: 0;
+    }
+}

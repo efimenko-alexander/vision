@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision</title>
+
+    <link rel="shortcut icon" href="img/logos/site-logo.webp" type="image/png">
+
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/barbers.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/barberSchool.css">
+
+    <link rel="stylesheet" href="css/lightzoom.css" type="text/css">
+
+    <script src="https://kit.fontawesome.com/a9f1d58c44.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/lightzoom.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+<!--Header-->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="index.html"><img src="img/logos/logo.webp" alt="logo" class="logo"></a>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+            </div>
+
+            <nav class="header__menu">
+                <ul class="horizontal-menu">
+                    <li><a class="menu__link" href="about-us.html">О нас</a></li>
+                    <li><a class="menu__link" href="services.html">Услуги</a></li>
+                    <li><a class="menu__link" href="barbers.html">Барберы</a></li>
+                    <li><a class="menu__link" href="gallery.html">Галерея</a></li>
+                    <li><a class="menu__link" href="store.html">Магазин</a></li>
+                    <li><a class="menu__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!--Slider-->
+    <div class="slider">
+        <div class="slides" id="slider">
+            <div class="slide" id="slide">
+                <img src="img/slider/slide-1.webp" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="img/slider/slide-2.webp" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="img/slider/slide-3.webp" alt="">
+            </div>
+
+        </div>
+
+        <div class="slider__content">
+            <div class="slider__title">
+                <h2>Открой своё видение</h2>
+            </div>
+
+            <div class="slider__text">
+                <p>И парикмахеры, и философы меняют личность людей.</p>
+            </div>
+
+            <div class="slider__btn">
+                <a href="tel: +375447618657" class="btn">Позвонить</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About us -->
+    <div class="about-us" id="about-us">
+        <div class="container">
+            <div class="about-us__inner">
+                <div class="about-us__text__title">
+                    <h3>Вас приветствует Vision</h3>
+                </div>
+                <div class="about-us__photo">
+                    <img src="img/description/1.webp" alt="">
+                </div>
+                <div class="about-us__text__subtitle">
+                    <h4>Vision - это территория создания и воплощения ваших мечтаний о стрижках.</h4>
+                </div>
+                <div class="about-us__text__desc">
+                    <p>
+                        В барбершопе Vision команда высококвалифицированных и обученных барберов.
+                        Наши мастера знают последние стили стрижки, которые нужны молодым людям,
+                        и, что более важно, наши парикмахеры могут без проблем создать желаемый стиль прически.
+                        Стрижка важна, молоды вы или стары. Когда люди делают стрижку, которая возбуждает их и
+                        заставляет чувствовать себя хорошо, это вселяет в них уверенность и повышает их самооценку.
+                        Ухоженная прическа говорит о людях о том, насколько хорошо они за собой следят.
+                    </p>
+                </div>
+                <div class="about-us__btn">
+                    <a href="about-us.html " class="btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services">
+        <div class="container">
+            <div class="main-title">
+                <h3>Наши услуги</h3>
+            </div>
+            <div class="services__inner" id="services">
+            </div>
+        </div>
+    </div>
+    <script>outputServices();</script>
+
+    <!-- Quote -->
+    <div class="quote">
+        <div class="container">
+            <div class="quote__inner">
+                <q>Искусство не должно опускаться до уровня общества. Искусство должно тянуть общество вверх.</q>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barbers -->
+    <div class="barbers">
+        <div class="container">
+            <div class="main-title">
+                <h3>Наши барберы</h3>
+            </div>
+            <div class="barbers__inner" id="barbers">
+            </div>
+            <div class="barbers__btn">
+                <a href="barbers.html" class="btn">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    <script>outputBarbers();</script>
+
+    <!--Email form-->
+    <div class="email">
+        <div class="blur">
+        </div>
+        <div class="container">
+            <div class="email__inner">
+                <div class="email__title main-title">
+                    <h3>Задать вопрос</h3>
+                </div>
+                <div class="form">
+                    <form action="php/sendMail.php" class="email-form" method="POST">
+                        <div class="text-box">
+                            <input type="text" name="Name" id="emailFormName" class="text-box" required>
+                            <div class="placeholder-text-box">
+                                <span>Ф.И.О.</span>
+                            </div>
+                        </div>
+
+                        <div class="text-box">
+                            <input type="text" name="Telephone" id="emailFormTelephone" required>
+                            <span class="placeholder-text-box">Номер телефона</span>
+                        </div>
+
+                        <div class="text-box">
+                            <input type="text" name="email" id="emailFormAddress" required>
+                            <span class="placeholder-text-box">Адрес электронной почты</span>
+                        </div>
+
+                        <div class="textarea email-form__textarea">
+                            <textarea name="message" id="emailFormMessage" required></textarea>
+                            <span class="placeholder-textarea">Чем мы можем вам помочь?</span>
+                        </div>
+                        <button class="btn email-form__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Gallery -->
+    <div class="gallery">
+        <div class="main-title">
+            <h3>Наши работы</h3>
+        </div>
+        <div class="container">
+            <div class="gallery__inner" id="gallery">
+            </div>
+        </div>
+        <a href="gallery.html" class="btn gallery__btn">Показать еще</a>
+    </div>
+    <script>outputGallery();</script>
+
+    <!-- Barber school -->
+    <div class="barber-school">
+        <div class="barber-school__photo">
+            <img src="img/BarberSchool/school.webp" alt="">
+        </div>
+
+        <div class="barber-school__logo">
+            <img src="img/BarberSchool/logo.webp" alt="">
+        </div>
+        <div class="barber-school__title">
+            <h3>Школа барбера</h3>
+        </div>
+        <div class="barber-school__text">
+            <p>
+                Наши групповые занятия максимально интенсивные, потому что работают сразу 3 мастера!
+                Поможем Вам в кротчайшие сроки узнать все самое необходимое для работы в барбершоп.
+                Мы не просто коворкинг - мы команда единомышленников. Каждый мастер работающий в наших
+                стенах, разделяет наше видение и высококлассный профессионал. Мы все помогаем друг друг
+                стать ещё лучшей версией себя.
+                Название V I S I O N говорит за себя. Наша команда - это единый посыл, который мы несём
+                для каждого. Взгляд на то, как помочь каждому гостю обрести, или подчеркнуть свою
+                индивидуальность и уверенность. Ждём вас!
+            </p>
+        </div>
+
+        <div class="barber-school__video">
+            <div class="video-player" >
+                <video width="100%" height="500px" class="video" loop muted id="video-player">
+                    <source src="video/barberSchool.mp4" type="video/mp4" />
+                    <source src="video/barberSchool.ogv" type="video/ogv" />
+                    <source src="video/barberSchool.webm" type="video/webm" />
+                </video>
+            </div>
+
+            <button class="play-video-button">
+                <i class="fas fa-play fa-2x"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Store -->
+    <div class="store">
+        <div class="main-title">
+            <h3>Наша продукция</h3>
+        </div>
+
+        <div class="container">
+            <div class="store__inner store-slider"  id="store">
+            </div>
+        </div>
+
+        <div>
+            <a href="store.html" id="showMore" class="store__btn btn">Показать еще</a>
+        </div>
+
+    </div>
+    <script>outputStore();</script>
+    <!--  Contacts  -->
+    <div class="contacts" id="contacts">
+        <div class="contacts__header">
+            <div class="container">
+                <div class="contacts__header">
+                    <div class="contacts__address">
+                        <div class="contacts__icon">
+                            <i class="fas fa-map-marker-alt fa-3x"></i>
+                        </div>
+
+                        <div class="contacts__information">
+                            <h5 class="header__heading">Адрес</h5>
+                            <a href="https://www.google.com/maps/dir/53.9347954,27.5451489/53.9314544,27.5512001/@53.9311875,27.5524467,18.25z?hl=ru" target="_blank" class="information">г. Минск, ул. Сморговский тракт 9</a>
+                        </div>
+                    </div>
+
+                    <div class="contacts__telephone">
+                        <div class="contacts__icon">
+                            <i class="fas fa-mobile-alt fa-3x"></i>
+                        </div>
+
+                        <div class="contacts__information">
+                            <h5 class="header__heading">Телефон</h5>
+                            <a href="tel: +375447618657" class="information">+375(33) 375-67-56</a>
+                        </div>
+                    </div>
+
+                    <div class="contacts__email">
+                        <div class="contacts__icon">
+                            <i class="far fa-envelope fa-3x"></i>
+                        </div>
+
+                        <div class="contacts__information">
+                            <h5 class="header__heading">Почта</h5>
+                            <a class="information">vision.barbershop@mail.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts__map">
+            <div class="map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.0161160164844!2d27.549011415307817!3d53.931457538424254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf8018994285%3A0x10ad1e054051713c!2z0KHQvNC-0YDQs9C-0LLRgdC60LjQuSDRgtGA0LDQutGCIDksINCc0LjQvdGB0LogMjIwMDY4!5e0!3m2!1sru!2sby!4v1617494020872!5m2!1sru!2sby" width="100%" height="500"  allowfullscreen="" loading="lazy"></iframe>
+                <div class="img-overlay"></div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__contacts">
+                <div class="footer__logo">
+                    <img src="img/logos/logo.webp" alt="logo" class="logo">
+                </div>
+
+                <div class="contacts__address">
+                    <a href="https://www.google.com/maps/dir/53.9347954,27.5451489/53.9314544,27.5512001/@53.9311875,27.5524467,18.25z?hl=ru" target="_blank">г. Минск, ул. Сморговский тракт 9</a>
+                </div>
+
+                <div class="contacts__telephone">
+                    <a href="tel: +375 (44) 761-86-57">Phone: +375 (33) 375-67-56</a>
+                </div>
+
+                <div class="contacts__social">
+                    <a href="https://www.instagram.com/vision.barbershop/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://vk.com/public196013008"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__menu">
+                <h5 class="footer__title">Меню</h5>
+                <ul class="vertical-menu">
+                    <li><a class="menu__link" href="#">О нас</a></li>
+                    <li><a class="menu__link" href="#">Услуги</a></li>
+                    <li><a class="menu__link" href="#">Барберы</a></li>
+                    <li><a class="menu__link" href="#">Магазин</a></li>
+                    <li><a class="menu__link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+
+            <div class="schedule">
+                <h5 class="footer__title">Расписание</h5>
+                <div class="schedule__inner">
+                    <p >Без выходных:</p>
+                    <p> 10.00 - 21.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
